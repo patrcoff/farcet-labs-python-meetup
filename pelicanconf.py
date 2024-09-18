@@ -1,6 +1,6 @@
 AUTHOR = 'Me'
 SITENAME = 'DemoBird'
-SITEURL = ""
+SITEURL = "https://yellow-ground-0a6399203.5.azurestaticapps.net"
 
 PATH = "content"
 
