@@ -23,5 +23,5 @@ jobs:
           npm install -g @azure/static-web-apps-cli
           python -m pip install 'pelican[markdown]'
           pelican content/ -t themes/genus
-          swa deploy ./output
+          swa deploy ./output --env production
 
