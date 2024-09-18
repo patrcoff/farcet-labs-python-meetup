@@ -19,8 +19,8 @@ jobs:
         with:
           pyton-version: '3.12'
         run: |
-        npm install -g @azure/static-web-apps-cli
-        python -m pip install 'pelican[markdown]'
-        pelican content/ -t themes/genus
-        swa deploy ./output
+          npm install -g @azure/static-web-apps-cli
+          python -m pip install 'pelican[markdown]'
+          pelican content/ -t themes/genus
+          swa deploy ./output
 
