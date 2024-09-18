@@ -17,7 +17,7 @@ jobs:
           node-version: 18
       - uses: actions/setup-python@v5
         with:
-          pyton-version: '3.12'
+          python-version: '3.12'
       - run: |
           npm install -g @azure/static-web-apps-cli
           python -m pip install 'pelican[markdown]'
