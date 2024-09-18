@@ -12,13 +12,13 @@ jobs:
       SWA_CLI_DEPLOYMENT_TOKEN: ${{ secrets.farcetPush }}
     steps:
       - uses: actions/checkout@v4.1.7
-      - uses: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 18
-      - uses: actions/setup-python@v5
+        uses: actions/setup-python@v5
         with:
           pyton-version: '3.12'
-      - run: |
+        run: |
         npm install -g @azure/static-web-apps-cli
         python -m pip install 'pelican[markdown]'
         pelican content/ -t themes/genus
